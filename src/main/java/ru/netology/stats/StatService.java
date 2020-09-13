@@ -53,7 +53,7 @@ public class StatService {
         float averageSales = calculateAverageSum(sales);
         int monthCount = 0;
         for (int sale : sales) {
-            if (sale < averageSales) {
+            if (sale > averageSales) {
                 monthCount++;
             }
         }
